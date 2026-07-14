@@ -1,0 +1,860 @@
+/* ===========================
+   Google Font
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#0b0b0b;
+    color:white;
+    overflow-x:hidden;
+
+}
+
+/* ===========================
+Loader
+=========================== */
+
+#loader{
+
+    height:100vh;
+    width:100%;
+    background:black;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+}
+
+.heart{
+
+    font-size:70px;
+    animation:beat 1s infinite;
+
+}
+
+@keyframes beat{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.3);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+#loader h2{
+
+margin-top:20px;
+font-size:35px;
+
+}
+
+/* ===========================
+Hero
+=========================== */
+
+.hero{
+
+position:relative;
+height:100vh;
+width:100%;
+
+overflow:hidden;
+
+}
+
+.hero-image{
+
+width:100%;
+height:100%;
+object-fit:cover;
+
+filter:brightness(45%);
+
+}
+
+.overlay{
+
+position:absolute;
+
+top:0;
+left:0;
+
+height:100%;
+width:100%;
+
+background:rgba(0,0,0,.35);
+
+}
+
+.hero-content{
+
+position:absolute;
+
+top:50%;
+left:50%;
+
+transform:translate(-50%,-50%);
+
+text-align:center;
+
+width:90%;
+
+}
+
+.hero-content h3{
+
+font-size:35px;
+
+font-family:'Dancing Script',cursive;
+
+color:#ffb6c1;
+
+}
+
+.hero-content h1{
+
+font-size:75px;
+
+margin:20px 0;
+
+}
+
+.hero-content p{
+
+font-size:22px;
+
+line-height:35px;
+
+}
+
+#beginBtn{
+
+margin-top:40px;
+
+padding:18px 40px;
+
+border:none;
+
+border-radius:50px;
+
+background:#ff4d6d;
+
+color:white;
+
+font-size:20px;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+#beginBtn:hover{
+
+background:white;
+
+color:black;
+
+transform:scale(1.08);
+
+}
+
+/* ===========================
+Nickname Section
+=========================== */
+
+.nickname-section{
+
+height:100vh;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.nickname-image{
+
+height:100%;
+
+width:100%;
+
+object-fit:cover;
+
+filter:brightness(40%);
+
+}
+
+.nickname-content{
+
+position:absolute;
+
+top:50%;
+
+left:50%;
+
+transform:translate(-50%,-50%);
+
+text-align:center;
+
+width:90%;
+
+}
+
+.nickname-content h2{
+
+font-size:35px;
+
+font-family:'Dancing Script',cursive;
+
+color:#ffb6c1;
+
+}
+
+.nickname-content h1{
+
+margin-top:20px;
+
+font-size:80px;
+
+color:white;
+
+}
+
+/* ===========================
+Common Sections
+=========================== */
+
+.childhood,
+.school,
+.walking,
+.movies,
+.college,
+.phase,
+.recent,
+.graduation,
+.ending{
+
+padding:100px 10%;
+
+text-align:center;
+
+}
+
+.childhood h1,
+.school h1,
+.walking h1,
+.movies h1,
+.college h1,
+.phase h1,
+.recent h1,
+.graduation h1,
+.ending h1{
+
+font-size:55px;
+
+margin-bottom:40px;
+
+color:#ffb6c1;
+
+font-family:'Dancing Script',cursive;
+
+}
+
+.childhood p,
+.school p,
+.walking p,
+.movies p,
+.college p,
+.phase p,
+.recent p,
+.graduation p,
+.ending p{
+
+font-size:22px;
+
+line-height:45px;
+
+max-width:900px;
+
+margin:auto;
+
+}
+/* ===========================
+IMAGE GALLERY
+=========================== */
+
+.gallery{
+
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+gap:25px;
+
+margin-top:50px;
+
+}
+
+.gallery img{
+
+width:260px;
+height:360px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.45);
+
+transition:.5s;
+
+cursor:pointer;
+
+}
+
+.gallery img:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 20px 45px rgba(255,77,109,.7);
+
+}
+
+/* ===========================
+MEMORY CARDS
+=========================== */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+padding:80px 10%;
+
+}
+
+.memory-card{
+
+background:rgba(255,255,255,.08);
+
+padding:35px;
+
+border-radius:20px;
+
+backdrop-filter:blur(12px);
+
+transition:.4s;
+
+box-shadow:0 0 20px rgba(255,255,255,.08);
+
+}
+
+.memory-card:hover{
+
+transform:translateY(-15px);
+
+background:#ff4d6d;
+
+}
+
+.memory-card h2{
+
+font-size:50px;
+
+margin-bottom:20px;
+
+}
+
+.memory-card p{
+
+font-size:18px;
+
+line-height:32px;
+
+}
+
+/* ===========================
+STORY BOX
+=========================== */
+
+.story{
+
+margin-top:60px;
+
+background:rgba(255,255,255,.06);
+
+padding:50px;
+
+border-radius:25px;
+
+backdrop-filter:blur(15px);
+
+max-width:900px;
+
+margin-left:auto;
+
+margin-right:auto;
+
+box-shadow:0 0 20px rgba(255,255,255,.08);
+
+}
+
+/* ===========================
+DARK SECTION
+=========================== */
+
+.dark{
+
+background:#050505;
+
+}
+
+/* ===========================
+BUTTON
+=========================== */
+
+.continue{
+
+padding:100px;
+
+text-align:center;
+
+}
+
+.continue button{
+
+padding:18px 45px;
+
+font-size:22px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+background:#ff4d6d;
+
+color:white;
+
+transition:.4s;
+
+}
+
+.continue button:hover{
+
+transform:scale(1.1);
+
+background:white;
+
+color:black;
+
+}
+
+/* ===========================
+FINAL IMAGES
+=========================== */
+
+.final-image,
+.last-image{
+
+width:350px;
+
+border-radius:25px;
+
+margin:40px auto;
+
+display:block;
+
+box-shadow:0 15px 40px rgba(255,77,109,.45);
+
+transition:.5s;
+
+}
+
+.final-image:hover,
+.last-image:hover{
+
+transform:scale(1.05);
+
+}
+
+/* ===========================
+SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#ff4d6d;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#111;
+
+}
+
+/* ===========================
+RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.hero-content h1{
+
+font-size:48px;
+
+}
+
+.hero-content p{
+
+font-size:18px;
+
+line-height:30px;
+
+}
+
+.nickname-content h1{
+
+font-size:48px;
+
+}
+
+.childhood h1,
+.school h1,
+.walking h1,
+.movies h1,
+.college h1,
+.phase h1,
+.recent h1,
+.graduation h1,
+.ending h1{
+
+font-size:42px;
+
+}
+
+.gallery img{
+
+width:90%;
+height:auto;
+
+}
+
+.story{
+
+padding:30px;
+
+}
+
+}
+/* =======================================
+   PREMIUM EFFECTS
+=======================================*/
+
+body{
+    background:linear-gradient(180deg,#090909,#111,#181818);
+}
+
+/* Floating Hearts */
+
+.floating-heart{
+
+    position:fixed;
+
+    bottom:-50px;
+
+    font-size:25px;
+
+    animation:floatHeart linear forwards;
+
+    pointer-events:none;
+
+    z-index:9999;
+
+}
+
+@keyframes floatHeart{
+
+0%{
+
+transform:translateY(0) scale(.5);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh) rotate(360deg) scale(1.5);
+
+opacity:0;
+
+}
+
+}
+
+/* Loader */
+
+#loader{
+
+position:fixed;
+
+top:0;
+left:0;
+
+z-index:99999;
+
+}
+
+/* Hero Animation */
+
+.hero-image{
+
+animation:zoomImage 20s infinite alternate;
+
+}
+
+@keyframes zoomImage{
+
+from{
+
+transform:scale(1);
+
+}
+
+to{
+
+transform:scale(1.15);
+
+}
+
+}
+
+/* Hero Title */
+
+.hero-content h1{
+
+text-shadow:0 0 30px rgba(255,255,255,.7);
+
+}
+
+/* Hero Paragraph */
+
+.hero-content p{
+
+margin-top:20px;
+
+}
+
+/* Button Glow */
+
+#beginBtn{
+
+box-shadow:0 0 25px #ff4d6d;
+
+}
+
+#beginBtn:hover{
+
+box-shadow:0 0 50px #ff4d6d;
+
+}
+
+/* Section Animation */
+
+section{
+
+transition:1s;
+
+}
+
+/* Images */
+
+.gallery img{
+
+overflow:hidden;
+
+}
+
+.gallery img:hover{
+
+filter:brightness(115%);
+
+}
+
+/* Ending */
+
+.ending{
+
+background:linear-gradient(#111,#000);
+
+}
+
+/* Final Text */
+
+.ending h1{
+
+font-size:70px;
+
+margin-top:40px;
+
+}
+
+.ending p{
+
+margin-top:30px;
+
+}
+
+/* Footer */
+
+.finish{
+
+padding:100px;
+
+text-align:center;
+
+}
+
+.finish button{
+
+padding:20px 60px;
+
+border:none;
+
+border-radius:50px;
+
+background:#ff4d6d;
+
+color:white;
+
+font-size:20px;
+
+cursor:pointer;
+
+transition:.5s;
+
+}
+
+.finish button:hover{
+
+transform:scale(1.1);
+
+background:white;
+
+color:black;
+
+}
+#musicBtn{
+
+position:fixed;
+
+top:20px;
+
+right:20px;
+
+z-index:99999;
+
+padding:12px 20px;
+
+border:none;
+
+border-radius:30px;
+
+background:#ff4d6d;
+
+color:white;
+
+font-size:16px;
+
+cursor:pointer;
+
+box-shadow:0 0 20px rgba(255,77,109,.5);
+
+transition:.3s;
+
+}
+
+#musicBtn:hover{
+
+transform:scale(1.1);
+
+background:white;
+
+color:#ff4d6d;
+
+}
+/* ================= MUSIC BUTTON ================= */
+
+#musicBtn{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+border:none;
+
+background:#ff4d6d;
+
+color:white;
+
+font-size:24px;
+
+cursor:pointer;
+
+box-shadow:0 0 20px rgba(255,77,109,.6);
+
+transition:.4s;
+
+z-index:99999;
+
+}
+
+#musicBtn:hover{
+
+transform:scale(1.15);
+
+background:white;
+
+color:#ff4d6d;
+
+}
